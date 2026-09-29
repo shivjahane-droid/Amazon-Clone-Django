@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    height: 70px;
+    background-color: #131921;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 20px;
+}
+
+
+.logo img {
+    height: 40px;
+    width: 120px;
+}
+
+
+.location_box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 10px;
+}
+
+.fa-location-dot {
+    color: white;
+    font-size: 25px;
+}
+
+.text_small {
+    color: white;
+    font-size: 12px;
+}
+
+.text_update {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.search_box {
+    display: flex;
+    height: 40px;
+    width: 800px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.search_box select {
+    width: 55px;
+    border: none;
+    background-color: #e6e6e6;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+}
+
+.search_box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search_box button {
+    width: 50px;
+    border: none;
+    background-color: #febd69;
+    font-size: 20px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+
+.language {
+    color: white;
+    position: relative;
+}
+
+.language_button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.language_dropdown {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: white;
+    color: black;
+    width: 220px;
+    padding: 15px;
+}
+
+.language:hover .language_dropdown {
+    display: block;
+}
+
+.language_dropdown p {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.language_dropdown label {
+    display: block;
+    padding: 8px 5px;
+}

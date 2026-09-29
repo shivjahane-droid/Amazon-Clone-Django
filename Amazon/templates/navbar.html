@@ -1,0 +1,100 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Amazon Navbar</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <div class="logo">
+
+            <img src="{% static 'images/amazon_logo.png' %}"alt="Amazon Logo">
+
+        </div>
+
+        <div class="location_box">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <div>
+
+                <div class="text_small">
+                    Deliver to Shivam
+                </div>
+
+                <div class="text_update">
+                    Pune 431401
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="search_box">
+
+            <select>
+
+                <option>All</option>
+
+            </select>
+
+            <input type="text" placeholder="Search Amazon.in">
+
+            <button>
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        <div class="language">
+
+    <div class="language_button">
+        🇮🇳
+        <span>EN</span>
+        <i class="fa-solid fa-caret-down"></i>
+    </div>
+
+    <div class="language_dropdown">
+
+        <p>Change Language</p>
+
+        <label>
+            <input type="radio" name="language" checked>
+            English - EN
+        </label>
+
+        <label>
+            <input type="radio" name="language">
+            Hindi 
+        </label>
+
+        <label>
+            <input type="radio" name="language">
+            Marathi
+        </label>
+
+    </div>
+
+</div>
+
+    </header>
+
+</body>
+
+</html>
